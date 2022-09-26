@@ -1,0 +1,48 @@
+Estoque a,b;
+a = new Estoque();
+b = new Estoque();
+
+
+Console.WriteLine("Qual nome do seu produto?");
+a.Nome = Console.ReadLine();
+Console.WriteLine("Qual preço do seu produto");
+a.Preco = double.Parse(Console.ReadLine());
+Console.WriteLine("Qual a quantidade desse produto?");
+a.Quantidade = int.Parse(Console.ReadLine());
+Console.WriteLine("Qual a ");
+
+
+
+//DADOS ESTOQUE
+
+Console.WriteLine($"DADOS DO ESTOQUE\n{a.Nome}\n{a.Preco}\n{a.Quantidade}\n{}");
+ 
+
+
+
+Console.ReadLine();
+
+parte 2
+    class Estoque
+    {
+        public string Nome;
+        public double Preco;
+        public int Quantidade;
+
+        public double ValorTotalEmEstoque()//Obrigado a dar retorno pelo fato que não é ->void
+        {
+            double cal = (Quantidade * Preco);
+            return cal;
+        }
+        public void AdicionarProdutos(int Quanty)
+        {
+            Quantidade = Quanty;
+            Quanty = Quantidade + 1;
+        }
+        public void RemoverProdutos(int Quanty)
+        {
+            Quantidade = Quanty;
+            Quantidade = Quantidade - 1;
+        }
+    }
+}

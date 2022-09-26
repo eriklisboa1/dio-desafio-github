@@ -1,0 +1,5 @@
+São chamados de mebros de clase ou seja opsição a mebros e estancia
+são membros de ojetos paran serem chamados
+
+
+Uma classe que possui somente mebros estaticos pode ser uma classe estatica
